@@ -1,0 +1,2128 @@
+Parameter setting:
+conj_num = 2
+prop_num = 2
+num_iter = 1000
+prior_type = random
+epistemic = False
+subdomains = False
+smallest_subdomains = 2
+alts_to_ignore = props
+arguments_as_set = True
+non_commutative_cons = False
+trivial_cons = False
+
+----------------------------
+
+Order of states in all tables below is as follows:
+State 0 : a&b
+State 1 : ~a&b
+State 2 : a&~b
+State 3 : ~a&~b
+
+----------------------------
+
+Language:  ['AND']
+Alternatives (positive case):  ['AND(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))']
+
+Number of different speaker tables: 1
+The language is speaker STABLE in the simulation
+
+Optimal choices in positive sentences:
+ [('AND(a,b)', array([1., 0., 0., 0.]))]
+Optimal choices in negative sentences:
+ [('AND(a,b)', array([0., 0., 0., 0.]))]
+
+----------------------------
+
+Language:  ['OR']
+Alternatives (positive case):  ['OR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))']
+
+Number of different speaker tables: 1
+The language is speaker STABLE in the simulation
+
+Optimal choices in positive sentences:
+ [('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences:
+ [('OR(a,b)', array([0., 0., 0., 1.]))]
+
+----------------------------
+
+Language:  ['NAND']
+Alternatives (positive case):  ['NAND(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 1., 1., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 1., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 1., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NOR']
+Alternatives (positive case):  ['NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(NOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NOR(a,b)', array([1., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NOR(a,b)', array([1., 1., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NOR(a,b)', array([1., 0., 1., 0.]))]
+
+
+----------------------------
+
+Language:  ['XOR']
+Alternatives (positive case):  ['XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('XOR(a,b)', array([1., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('XOR(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['IFF']
+Alternatives (positive case):  ['IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('IFF(a,b)', array([1., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('IFF(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('IFF(a,b)', array([0., 0., 1., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('IFF(a,b)', array([0., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))']
+
+Number of different speaker tables: 1
+The language is speaker STABLE in the simulation
+
+Optimal choices in positive sentences:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+----------------------------
+
+Language:  ['AND', 'NAND']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 1., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 1., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NOR']
+Alternatives (positive case):  ['AND(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 1., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 1., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 1., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NOR']
+Alternatives (positive case):  ['OR(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 0., 1., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'XOR']
+Alternatives (positive case):  ['OR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([1., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 0., 1., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'NOR']
+Alternatives (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 7
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 7 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 1., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 1., 1., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'XOR']
+Alternatives (positive case):  ['NAND(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'IFF']
+Alternatives (positive case):  ['NAND(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([1., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 1., 0.])), ('IFF(a,b)', array([1., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NOR', 'XOR']
+Alternatives (positive case):  ['NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NOR', 'IFF']
+Alternatives (positive case):  ['NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('NOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('NOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([1., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('NOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('IFF(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('NOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 1., 0.]))]
+
+
+----------------------------
+
+Language:  ['XOR', 'IFF']
+Alternatives (positive case):  ['XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('XOR(a,b)', array([0., 1., 1., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('XOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('XOR(a,b)', array([0., 1., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('XOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('XOR(a,b)', array([0., 0., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('XOR(a,b)', array([1., 0., 0., 1.])), ('IFF(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('XOR(a,b)', array([0., 1., 0., 0.])), ('IFF(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('XOR(a,b)', array([1., 0., 0., 0.])), ('IFF(a,b)', array([0., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NOR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'NOR']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 7
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 7 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NOR', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 1., 1., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 1., 1., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'NOR']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 7
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 7 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'XOR']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 1., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NOR', 'XOR']
+Alternatives (positive case):  ['OR(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 1., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NOR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'XOR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'NOR', 'XOR']
+Alternatives (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 1., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'NOR', 'IFF']
+Alternatives (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 1., 1., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'XOR', 'IFF']
+Alternatives (positive case):  ['NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('NOR(a,b)', array([1., 0., 0., 0.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NOR(a,b)', array([0., 0., 0., 1.])), ('XOR(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('NOR(a,b)', array([0., 0., 0., 0.])), ('XOR(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'NOR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))']
+
+Number of different speaker tables: 7
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 7 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NOR', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 4
+The language is speaker UNSTABLE in the simulation
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'NOR', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'NOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'NOR', 'XOR']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'NOR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 1., 1., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 1., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'XOR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['NAND', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 1:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 2:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 3:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('NAND(a,b)', array([0., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 1.]))]
+Optimal choices in negative sentences in table 4:
+ [('NAND(a,b)', array([1., 0., 0., 0.])), ('NOR(a,b)', array([0., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'NOR', 'XOR']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'NOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 18
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 18 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'NAND', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['OR', 'NAND', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 0.])), ('NAND(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('OR(a,b)', array([0., 0., 0., 1.])), ('NAND(a,b)', array([1., 0., 0., 0.]))]
+
+
+----------------------------
+
+Language:  ['AND', 'OR', 'NAND', 'NOR', 'XOR', 'IFF']
+Alternatives (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)', 'a', 'b']
+Alternatives (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))', '~(a)', '~(b)']
+Alternatives checked for stability (positive case):  ['AND(a,b)', 'OR(a,b)', 'NAND(a,b)', 'NOR(a,b)', 'XOR(a,b)', 'IFF(a,b)']
+Alternatives checked for stability (negative case):  ['~(AND(a,b))', '~(OR(a,b))', '~(NAND(a,b))', '~(NOR(a,b))', '~(XOR(a,b))', '~(IFF(a,b))']
+
+Number of different speaker tables: 14
+The language is speaker UNSTABLE in the simulation
+
+Only 4 tables among the 14 found are shown below
+
+Optimal choices in positive sentences in table 1:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 1:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 2:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 2:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 3:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 3:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+Optimal choices in positive sentences in table 4:
+ [('AND(a,b)', array([1., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 0.]))]
+Optimal choices in negative sentences in table 4:
+ [('AND(a,b)', array([0., 0., 0., 0.])), ('OR(a,b)', array([0., 0., 0., 1.]))]
+
+
+----------------------------
+
+Sorting languages by number of possible speaker choices:
+[1, ['AND']]
+[1, ['AND', 'OR']]
+[1, ['OR']]
+[4, ['AND', 'IFF']]
+[4, ['AND', 'NAND']]
+[4, ['AND', 'NAND', 'XOR']]
+[4, ['AND', 'NOR']]
+[4, ['AND', 'NOR', 'IFF']]
+[4, ['AND', 'OR', 'IFF']]
+[4, ['AND', 'OR', 'NAND']]
+[4, ['AND', 'OR', 'NAND', 'XOR']]
+[4, ['AND', 'OR', 'NOR']]
+[4, ['AND', 'OR', 'NOR', 'IFF']]
+[4, ['AND', 'OR', 'XOR']]
+[4, ['AND', 'XOR']]
+[4, ['IFF']]
+[4, ['NAND']]
+[4, ['NAND', 'XOR']]
+[4, ['NOR']]
+[4, ['NOR', 'IFF']]
+[4, ['OR', 'IFF']]
+[4, ['OR', 'NAND']]
+[4, ['OR', 'NAND', 'XOR']]
+[4, ['OR', 'NOR']]
+[4, ['OR', 'NOR', 'IFF']]
+[4, ['OR', 'XOR']]
+[4, ['XOR']]
+[7, ['AND', 'NAND', 'NOR']]
+[7, ['AND', 'OR', 'NAND', 'NOR']]
+[7, ['NAND', 'NOR']]
+[7, ['OR', 'NAND', 'NOR']]
+[14, ['AND', 'NAND', 'NOR', 'IFF']]
+[14, ['AND', 'NAND', 'NOR', 'XOR']]
+[14, ['AND', 'NAND', 'NOR', 'XOR', 'IFF']]
+[14, ['AND', 'OR', 'NAND', 'NOR', 'IFF']]
+[14, ['AND', 'OR', 'NAND', 'NOR', 'XOR']]
+[14, ['AND', 'OR', 'NAND', 'NOR', 'XOR', 'IFF']]
+[14, ['AND', 'OR', 'XOR', 'IFF']]
+[14, ['AND', 'XOR', 'IFF']]
+[14, ['NAND', 'NOR', 'IFF']]
+[14, ['NAND', 'NOR', 'XOR']]
+[14, ['NAND', 'NOR', 'XOR', 'IFF']]
+[14, ['OR', 'NAND', 'NOR', 'IFF']]
+[14, ['OR', 'NAND', 'NOR', 'XOR']]
+[14, ['OR', 'NAND', 'NOR', 'XOR', 'IFF']]
+[14, ['OR', 'XOR', 'IFF']]
+[14, ['XOR', 'IFF']]
+[18, ['AND', 'NAND', 'IFF']]
+[18, ['AND', 'NAND', 'XOR', 'IFF']]
+[18, ['AND', 'NOR', 'XOR']]
+[18, ['AND', 'NOR', 'XOR', 'IFF']]
+[18, ['AND', 'OR', 'NAND', 'IFF']]
+[18, ['AND', 'OR', 'NAND', 'XOR', 'IFF']]
+[18, ['AND', 'OR', 'NOR', 'XOR']]
+[18, ['AND', 'OR', 'NOR', 'XOR', 'IFF']]
+[18, ['NAND', 'IFF']]
+[18, ['NAND', 'XOR', 'IFF']]
+[18, ['NOR', 'XOR']]
+[18, ['NOR', 'XOR', 'IFF']]
+[18, ['OR', 'NAND', 'IFF']]
+[18, ['OR', 'NAND', 'XOR', 'IFF']]
+[18, ['OR', 'NOR', 'XOR']]
+[18, ['OR', 'NOR', 'XOR', 'IFF']]
+
